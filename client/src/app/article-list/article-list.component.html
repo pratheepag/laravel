@@ -1,0 +1,8 @@
+<h2>Article List</h2>
+
+<div *ngFor="let article of articles">
+  {{article.description}}
+  <div *ngFor="let video of article.videos">
+     <iframe [src]='safeURL'  frameborder="0"  allowfullscreen ></iframe>
+  </div>
+</div>
